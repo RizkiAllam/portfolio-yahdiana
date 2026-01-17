@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+
+.glass {
+  @apply bg-white/85 backdrop-blur-md dark:bg-[#0a0a0a]/85 border-b border-primary-100 dark:border-dark-border;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 rounded dark:bg-primary-600;
+}
